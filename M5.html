@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2 style="float:left;color:white">Accio job</h2>
+        <a href="#bottom" onclick="scrollFunction2()">Contact</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#home" onclick="scrollFunction1()">Home</a>
+      </div>
+      
+      <div class="main" id="start">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+      
+      </div>
+      <div style="display: flex;"><h1>Our Service</h1>
+         <div class="card"><h3>Service 1</h3>
+         <p>	
+        The Green–Meldrim House is a historic house at 14 West Macon Street, on the northwest corner of Madison Square,
+       .</p></div>
+         <div class="card"><h3>Service 2</h3>
+            <p>	
+           The Green–Meldrim House is a historic house at 14 West Macon Street, on the northwest corner of Madison Square, 
+          .</p>
+        </div>
+          <div class="card"><h3>Service 3</h3>
+            <p>	
+           The Green–Meldrim House is a historic house at 14 West Macon Street, on the northwest corner of Madison Square, 
+          .</p>
+         
+        </div>
+      </div>
+          <div class="footer" id="contact">Contact - daringsingh2208@gmail.com</div>
+     
+
+          <script>
+            function scrollFunction1() {
+              let e = document.getElementById("start");
+              e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'start'
+              });
+            }
+            function scrollFunction2() {
+              let e = document.getElementById("contact");
+              // This ends the block to the window 
+              // bottom and also aligns the view to the center 
+              e.scrollIntoView({
+                block: 'end',
+                behavior: 'smooth',
+                inline: 'center'
+              });
+            }
+          </script>
+</body>
+</html>
